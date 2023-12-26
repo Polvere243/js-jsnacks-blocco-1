@@ -2,20 +2,24 @@ const fruits = ['banana', 'mela', 'pera', 'ciliegia', 'arancia', 'mandarino', 'c
 const button = document.querySelector("button");
 const paragraph = document.querySelector("p");
 
-
+// aggiungo la pesca in coda all'array
 fruits.push("pesca");
 console.table(fruits);
 
-let isWatermelonIn = false; 
+// aggancio la ricerca del cocomero al bottone
+button.addEventListener("click", function() {
+    let isWatermelonIn = false; 
 
 for (let i = 0; i < fruits.length && !isWatermelonIn; i++) {
     if ("cocomero" === fruits[i]){
-        console.log("Trovato! Devo solo preparare il cocktail.") 
+        paragraph.innerText = "Trovato! Devo solo preparare il cocktail." 
         isWatermelonIn = true;       
     } else {
-        console.log("Oh no, devo uscire a comprare il cocomero!");
+        paragraph.innerText = "Oh no, devo uscire a comprare il cocomero!";
+
     }
+    
        
-
-
 }
+})
+
