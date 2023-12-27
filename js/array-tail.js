@@ -7,9 +7,11 @@ let chosenNumbers = [];
 const numOfElements = parseInt(prompt("Quanti numeri vuoi nell'array?", "50"));
 console.log(numOfElements);
 // genero tanti numeri casuali quanti ne vuole l'utente
-
+let numbers = "";
 for (let i = 0; i < numOfElements; i++){
-    chosenNumbers.push(Math.floor(Math.random() * (max + 1 - min)) + min);
+    numbers = Math.floor(Math.random() * (max + 1 - min )) + min;
+    chosenNumbers.push(numbers);
     console.table(chosenNumbers);
 }
 
+console.table(chosenNumbers.slice(chosenNumbers.length - 5));
