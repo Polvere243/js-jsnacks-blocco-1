@@ -15,3 +15,7 @@ for (let i = 0; i < numOfElements; i++){
 }
 
 console.table(chosenNumbers.slice(chosenNumbers.length - 5));
+
+const numbersToLog = parseInt(prompt("Quanti numeri devo stampare?", "5"));
+
+console.table(chosenNumbers.slice(chosenNumbers.length - numbersToLog));
