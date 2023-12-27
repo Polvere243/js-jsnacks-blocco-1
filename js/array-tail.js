@@ -1,1 +1,2 @@
-console.log("JS OK");
+const userNumbers = document.querySelector("input");
+const button = document.getElementById("number");
