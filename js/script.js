@@ -18,8 +18,6 @@ for (let i = 0; i < fruits.length && !isWatermelonIn; i++) {
         paragraph.innerText = "Oh no, devo uscire a comprare il cocomero!";
 
     }
-    
-       
 }
 })
 
